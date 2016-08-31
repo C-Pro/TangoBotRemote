@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cpro.tangobotremote.MainActivity">
+
+    <Button
+        android:text="Right"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/R"
+        android:onClick="onClick"
+        android:layout_alignBaseline="@+id/S"
+        android:layout_toRightOf="@+id/S" />
+
+    <Button
+        android:text="Left"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/L"
+        android:onClick="onClick"
+        android:layout_alignBaseline="@+id/S"
+        android:layout_alignBottom="@+id/S"
+        android:layout_toLeftOf="@id/S"  />
+
+    <Button
+        android:text="Back"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/B"
+        android:onClick="onClick"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Stop"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/S"
+        android:onClick="onClick"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/B"
+        android:layout_alignStart="@id/B" />
+
+    <Button
+        android:text="Forward"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/F"
+        android:onClick="onClick"
+        android:layout_above="@id/S"
+        android:layout_alignStart="@id/S"
+        />
+
+</RelativeLayout>
